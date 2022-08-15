@@ -31,10 +31,10 @@ public class Buoi1 {
         // System.out.println("Gia tri cua a: " + a);
         // System.out.println("Gia tri cua b: " + b);
 
-        int a = 5;
-        int b = 3;
+        // int a = 5;
+        // int b = 3;
 
-        int result = a++ - --b + --a + a-- + b++ - b-- + a++ + --a;
+        // int result = a++ - --b + --a + a-- + b++ - b-- + a++ + --a;
         // 5 - --b + --a + a-- + b++ - b-- + a++ + --a; a = 6, b = 3;
         // 5 - 2 + --a + a-- + b++ - b-- + a++ + --a; a = 6, b = 2;
         // 5 - 2 + 5 + a-- + b++ - b-- + a++ + --a; a = 5, b = 2;
@@ -45,13 +45,32 @@ public class Buoi1 {
         // 5 - 2 + 5 + 5 + 2 - 3 + 4 + 4; a = 4, b = 2;
         // a = 4, b = 2, result = 20
 
-        System.out.println("Gia tri cua a: " + a);
-        System.out.println("Gia tri cua b: " + b);
-        System.out.println("Gia tri cua ket qua: " + result);
+        // System.out.println("Gia tri cua a: " + a);
+        // System.out.println("Gia tri cua b: " + b);
+        // System.out.println("Gia tri cua ket qua: " + result);
 
         // Value 1: a = 4, b = 2, result = 20 (Tich)
         // Value 2: a = 4, b = 2, result = 23 (Kevin)
         // Value 3: a = 5, b = 2, result = 17 (Tan)
+
+        int c = -5;
+        int d = 5;
+
+        int result = --c + c++ - d-- + d-- + ++c + c-- - d++ + c++ - d--;
+        // -6 + c++ - d-- + d-- + ++c + c-- - d++ + c++ - d--; c = -6, d = 5;
+        // -6 - 6 - d-- + d-- + ++c + c-- - d++ + c++ - d--; c = -5, d = 5;
+        // -6 - 6 - 5 + d-- + ++c + c-- - d++ + c++ - d--; c = -5, d = 4;
+        // -6 - 6 - 5 + 4 + ++c + c-- - d++ + c++ - d--; c = -5, d = 3;
+        // -6 - 6 - 5 + 4 - 4 + c-- - d++ + c++ - d--; c = -4, d = 3;
+        // -6 - 6 - 5 + 4 - 4 - 4 - d++ + c++ - d--; c = -5, d = 3;
+        // -6 - 6 - 5 + 4 - 4 - 4 - 3 + c++ - d--; c = -5, d = 4;
+        // -6 - 6 - 5 + 4 - 4 - 4 - 3 - 5 - d--; c = -4, d = 4;
+        // -6 - 6 - 5 + 4 - 4 - 4 - 3 - 5 - 4; c = -4, d = 3;
+        // c = -4, d = 3, result = -33
+
+         System.out.println("Gia tri cua c: " + c);
+         System.out.println("Gia tri cua d: " + d);
+         System.out.println("Gia tri cua ket qua: " + result);
     }
 
 }
