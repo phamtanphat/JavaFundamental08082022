@@ -1,3 +1,6 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
 public class Buoi1 {
     public static void main(String[] args) {
         // comment
@@ -53,10 +56,10 @@ public class Buoi1 {
         // Value 2: a = 4, b = 2, result = 23 (Kevin)
         // Value 3: a = 5, b = 2, result = 17 (Tan)
 
-        int c = -5;
-        int d = 5;
+        // int c = -5;
+        // int d = 5;
 
-        int result = --c + c++ - d-- + d-- + ++c + c-- - d++ + c++ - d--;
+        // int result = --c + c++ - d-- + d-- + ++c + c-- - d++ + c++ - d--;
         // -6 + c++ - d-- + d-- + ++c + c-- - d++ + c++ - d--; c = -6, d = 5;
         // -6 - 6 - d-- + d-- + ++c + c-- - d++ + c++ - d--; c = -5, d = 5;
         // -6 - 6 - 5 + d-- + ++c + c-- - d++ + c++ - d--; c = -5, d = 4;
@@ -68,11 +71,43 @@ public class Buoi1 {
         // -6 - 6 - 5 + 4 - 4 - 4 - 3 - 5 - 4; c = -4, d = 3;
         // c = -4, d = 3, result = -33
 
-         System.out.println("Gia tri cua c: " + c);
-         System.out.println("Gia tri cua d: " + d);
-         System.out.println("Gia tri cua ket qua: " + result);
-    }
+        // Độ ưu tiên
+        // ++ --
+        // * /
+        // + -
+        // System.out.println("Gia tri cua c: " + c);
+        // System.out.println("Gia tri cua d: " + d);
+        // System.out.println("Gia tri cua ket qua: " + result);
 
+        // int a = 5;
+        // int b = a % 3; // Chia lay phan
+        // System.out.print(b);
+
+        // Toán tử so sánh : >, <, ==
+
+        // 4: Câu điều kiện
+
+        // int a = 10;
+        // int b = 10;
+
+        // Trường hợp sẽ xảy ra thì sẽ phải làm gì
+
+        // if (a > b) {
+        //    System.out.print("A lớn hơn B");
+        // } else if (a < b) {
+        //    System.out.print("A bé hơn B");
+        // } else {
+        //    System.out.print("A bằng B");
+        // }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Mời bạn nhập tên: ");
+        String name = scanner.nextLine();
+        System.out.print("Mời bạn nhập tuổi: ");
+        String age = scanner.nextLine();
+        System.out.print("Tên bạn là " + name);
+        System.out.print("Tuổi bạn là " + age);
+    }
 }
 
 
