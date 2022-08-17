@@ -107,6 +107,10 @@ public class Buoi1 {
         String age = scanner.nextLine();
         System.out.print("Tên bạn là " + name);
         System.out.print("Tuổi bạn là " + age);
+
+
+        // Chuẩn bị data test cho 6 trường hợp
+        // Chiều cao ? , cân nặng ?
     }
 }
 
