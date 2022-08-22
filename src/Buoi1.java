@@ -100,19 +100,80 @@ public class Buoi1 {
         //    System.out.print("A bằng B");
         // }
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Mời bạn nhập tên: ");
-        String name = scanner.nextLine();
-        System.out.print("Mời bạn nhập tuổi: ");
-        String age = scanner.nextLine();
-        System.out.print("Tên bạn là " + name);
-        System.out.print("Tuổi bạn là " + age);
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.print("Mời bạn nhập tên: ");
+        // String name = scanner.nextLine();
+        // System.out.print("Mời bạn nhập tuổi: ");
+        // String age = scanner.nextLine();
+        // System.out.print("Tên bạn là " + name);
+        // System.out.print("Tuổi bạn là " + age);
 
 
         // Chuẩn bị data test cho 6 trường hợp
         // Chiều cao ? , cân nặng ?
 
         // Hello
+
+        // 5: Câu điều kiện switch case
+
+        // int month = 1;
+
+        // switch (month) {
+        //    case 1:
+        //    case 2:
+        //    case 3:
+        //        System.out.println("Quý 1");
+        //        break;
+        // }
+
+        // Tạo chức năng cho người dùng nhập
+        // 1 - Mã tài khoản theo chữ cái
+        //      a: M (Member)
+        //      b: V (Vip)
+        //      c: D (Diamond)
+        // Nếu nhập sai cho thoát
+        // 2 - Nhập tổng tiền
+        // Loại M -> Giảm 5 %
+        // Loại V -> Giảm 7 %
+        // Loại D -> Giảm 15%
+
+        // Out put
+        // Thành viên thuộc loại gì
+        // Giảm bao nhiêu phần trăm
+        // Số tiền cần phải trả là bao nhiêu
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Mời bạn nhập mã khách hàng: ");
+        String codeUser = scanner.nextLine();
+        System.out.print("Mời bạn tổng tiền: ");
+        int totalPayment = scanner.nextInt();
+        int discountPercent = 0;
+        String categoryCodeUser = "";
+
+        switch (codeUser) {
+            case "M":
+            case "m":
+                discountPercent = 5;
+                categoryCodeUser = "Member";
+                break;
+            case "V":
+            case "v":
+                discountPercent = 7;
+                categoryCodeUser = "Vip";
+                break;
+            case "D":
+            case "d":
+                discountPercent = 15;
+                categoryCodeUser = "Diamond";
+                break;
+            default:
+                System.out.print("Không đúng mã khách hàng");
+                return;
+        }
+        totalPayment = (int) (totalPayment * ((float) (100 - discountPercent) / 100 ));
+        System.out.println("Thành viên thuộc loại " + categoryCodeUser);
+        System.out.println("Được ưu đãi giảm " + discountPercent + "%");
+        System.out.println("Số tiền cần phải thanh toán là " + totalPayment + " VNĐ");
     }
 }
 
