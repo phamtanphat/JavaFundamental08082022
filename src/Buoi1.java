@@ -111,6 +111,8 @@ public class Buoi1 {
 
         // Chuẩn bị data test cho 6 trường hợp
         // Chiều cao ? , cân nặng ?
+
+        // Hello
     }
 }
 
