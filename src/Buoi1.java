@@ -217,24 +217,41 @@ public class Buoi1 {
 //
 //        System.out.print("Số " + number + " là số nguyên tố");
 
-        int[] arrNumber = {2, 3, 4, 5, 6, 10, 1, -1, 20, 30, 15, 16, 17, 18, 21, 22, 23};
+//        int[] arrNumber = {2, 3, 4, 5, 6, 10, 1, -1, 20, 30, 15, 16, 17, 18, 21, 22, 23};
 
         // Kiếm số lớn nhất
         // Kiếm số nhỏ nhất là số lẻ
 
-        int max, min;
-        max = min = arrNumber[0];
+//        int max, min;
+//        max = min = arrNumber[0];
+//
+//        for (int i = 1; i < arrNumber.length; i++) {
+//            if (arrNumber[i] > max) {
+//                max = arrNumber[i];
+//            } else if (arrNumber[i] < min && arrNumber[i] % 2 != 0) {
+//                min = arrNumber[i];
+//            }
+//        }
+//
+//        System.out.println("Số lớn nhất " + max);
+//        System.out.println("Số nhỏ nhất " + min);
 
-        for (int i = 1; i < arrNumber.length; i++) {
-            if (arrNumber[i] > max) {
-                max = arrNumber[i];
-            } else if (arrNumber[i] < min && arrNumber[i] % 2 != 0) {
-                min = arrNumber[i];
-            }
-        }
+        // 7: Vòng lặp while
 
-        System.out.println("Số lớn nhất " + max);
-        System.out.println("Số nhỏ nhất " + min);
+//        int[] arrNumber = {2, 3, 4, 5, 6, 10, 1, -1, 20, 30, 15, 16, 17, 18, 21, 22, 23};
+//
+//        int index = arrNumber.length - 1;
+//        while(index >=0){
+//            System.out.println(arrNumber[index--]);
+//        }
 
+        Scanner scanner = new Scanner(System.in);
+        int value = -1;
+        do {
+            System.out.print("Mời bạn nhập tuổi: ");
+            value = scanner.nextInt();
+        }while(value < 0);
+
+        System.out.print("Bạn hiên tại " + value + " tuổi");
     }
 }
