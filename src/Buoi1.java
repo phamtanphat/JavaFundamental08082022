@@ -245,13 +245,22 @@ public class Buoi1 {
 //            System.out.println(arrNumber[index--]);
 //        }
 
-        Scanner scanner = new Scanner(System.in);
-        int value = -1;
-        do {
-            System.out.print("Mời bạn nhập tuổi: ");
-            value = scanner.nextInt();
-        }while(value < 0);
+//        Scanner scanner = new Scanner(System.in);
+//        int value = -1;
+//        do {
+//            System.out.print("Mời bạn nhập tuổi: ");
+//            value = scanner.nextInt();
+//        }while(value < 0);
+//
+//        System.out.print("Bạn hiên tại " + value + " tuổi");
 
-        System.out.print("Bạn hiên tại " + value + " tuổi");
+        // Hướng đối tượng
+        // Object (instance) và class
+
+        // Định nghĩa ra object (instance)
+        Animal cat = new Animal();
+        cat.weight = "1.2 Kg";
+        cat.height = "15cm";
+        cat.run("Chạy bằng 4 chân");
     }
 }
