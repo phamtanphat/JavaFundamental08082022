@@ -1,6 +1,3 @@
-import java.text.DecimalFormat;
-import java.util.Scanner;
-
 public class Buoi1 {
     public static void main(String[] args) {
         // comment
@@ -258,9 +255,33 @@ public class Buoi1 {
         // Object (instance) và class
 
         // Định nghĩa ra object (instance)
-        Animal cat = new Animal();
-        cat.weight = "1.2 Kg";
-        cat.height = "15cm";
-        cat.run("Chạy bằng 4 chân");
+        // Animal cat = new Animal("1.2 kg", "20cm");
+        // System.out.print(cat.height);
+        // System.out.print(cat.weight);
+        // cat.run("Chạy bằng 4 chân");
+
+        // Phương thức
+        // Access modifier : phạm vi truy cập
+        // duplicate
+
+        // print("Xin chào");
+        int data = plus(5, 10);
+        print(data + "");
+    }
+
+    // Định nghĩa phương thức
+    // 1: Phạm vi truy cập (public, private, protected, default)
+    // 2: Giá trị trả về
+    // 3: Tên phương thức
+    // 4: Tham số truyền vào
+
+     private static void print(String message) {
+        System.out.print(message);
+     }
+
+    // phương thức tổng khi xử lý xong trả về kết quả
+    private static int plus(int a, int b) {
+        int result = a + b;
+        return result;
     }
 }
