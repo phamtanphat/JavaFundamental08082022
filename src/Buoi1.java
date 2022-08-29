@@ -1,3 +1,5 @@
+import oop.encapsulation.Database;
+
 public class Buoi1 {
     public static void main(String[] args) {
         // comment
@@ -265,8 +267,8 @@ public class Buoi1 {
         // duplicate
 
         // print("Xin chào");
-        int data = plus(5, 10);
-        print(data + "");
+//        int data = plus(5, 10);
+//        print(data + "");
     }
 
     // Định nghĩa phương thức
@@ -275,13 +277,13 @@ public class Buoi1 {
     // 3: Tên phương thức
     // 4: Tham số truyền vào
 
-     private static void print(String message) {
-        System.out.print(message);
-     }
+//     private static void print(String message) {
+//        System.out.print(message);
+//     }
 
     // phương thức tổng khi xử lý xong trả về kết quả
-    private static int plus(int a, int b) {
-        int result = a + b;
-        return result;
-    }
+//    private static int plus(int a, int b) {
+//        int result = a + b;
+//        return result;
+//    }
 }
