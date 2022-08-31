@@ -1,4 +1,4 @@
-package oop.inheritance;
+package oop.inheritance_polymorphism;
 
 public class Bank{
     private float rate;
