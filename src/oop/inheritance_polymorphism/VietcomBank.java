@@ -13,5 +13,6 @@ public class VietcomBank extends Bank{
         } else {
             System.out.print("Không có lãi suất");
         }
+//        super.calculateRate(month);
     }
 }
